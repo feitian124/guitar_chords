@@ -1,0 +1,7 @@
+# the map key is chord name; the map value contains 6 mappings,
+# each of what stands for a chord, namely 1 to 6. then in the
+# 6 mappings, the key stands for guitar columns, the value
+# stands which finger to press
+---
+c : [{0: 0}, {1: 1}, {0: 0}, {2: 2}, {3: 4}, {3: 3}]
+am: [{0: 0}, {1: 1}, {2: 3}, {2: 2}, {0: 0}, {0: 0}]
