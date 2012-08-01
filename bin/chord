@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'guitar_chords'
+
+GuitarChords.show ARGV[0]

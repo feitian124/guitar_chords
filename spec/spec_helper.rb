@@ -1,5 +1,4 @@
 require 'rspec'
-require 'guitar_chords/guitar_chord'
 require 'guitar_chords'
 
 include GuitarChords

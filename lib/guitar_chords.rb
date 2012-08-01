@@ -1,14 +1,23 @@
+require "guitar_chords/chord"
 require "guitar_chords/version"
-require "guitar_chords/guitar_chord"
-require "yaml"
 
 module GuitarChords
-  def all
-    lines = YAML.load_file(File.dirname(__FILE__)+"/"+"guitar_chords/guitar_chords.yml")
-    chords = Array.new
+  def self.all
+    lines = YAML.load_file(File.dirname(__FILE__)+"/guitar_chords/chords.yml")
+    chords = [] 
     lines.each do |k,v|
-      chords << GuitarChord.new(k, v)
-    end
+      chords << Chord.new(k,v)
+    end  
     chords
+  end
+
+  def self.show(chord)
+    chords = GuitarChords.all
+    chords.each do |c|
+      if c.name == chord
+        puts c
+        break
+      end
+    end
   end
 end
