@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["feitian124@gmail.com"]
   gem.description   = %q{this gem contains all guitar chords information.}
   gem.summary       = %q{search guitar chords}
-  gem.homepage      = "blog.yunnuy.com"
+  gem.homepage      = "http://blog.yunnuy.com"
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
